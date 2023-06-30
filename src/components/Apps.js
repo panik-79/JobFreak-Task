@@ -1,11 +1,17 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Catalogue from './Catalogue'
-const Apps = () => {
+import Guide from './Guide'
+import Home from './Home'
+import  Contact from './Contact'
+import Information from './Information'
+const Apps = ({currTab}) => {
   return (
     <div className='apps'>
-        <Navbar/>
-        <Catalogue/>
+        <Navbar currTab={currTab}/>
+        {currTab === "Home" && <Home/>}
+        {currTab === "Contact" && <Contact/>}
+        {currTab === "Information" && <Information/>}
+        {currTab === "Guide" && <Guide/>}
     </div>
   )
 }

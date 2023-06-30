@@ -1,13 +1,14 @@
 import './App.css';
+import { useState } from 'react';
 import Apps from './components/Apps'
-// import Home from './components/Home'
 import User from './components/User';
 
 function App() {
+  const [currTab,setCurrTab] = useState("Home");
   return (
     <div className="App">
-      <User/>
-      <Apps/>
+      <User currTab={currTab} setCurrTab = {setCurrTab}/>
+      <Apps currTab={currTab}/>
     </div>
   );
 }
