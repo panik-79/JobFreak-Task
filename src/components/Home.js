@@ -17,19 +17,19 @@ const Home = () => {
       </p>
       <div className="my-info">
           <p>
-            <a href="https://github.com/panik-79">
+            <a href="https://github.com/panik-79" target="_blank">
               <FontAwesomeIcon icon={faGithub} />
               <span>panik_79</span>
             </a>
           </p>
           <p>
-            <a href="mailto:pujanparekh2609@gmail.com">
+            <a href="mailto:pujanparekh2609@gmail.com" target="_blank">
               <FontAwesomeIcon icon={faEnvelope} />
               <span>pujanparekh2609@gmail.com</span>
             </a>
           </p>
           <p>
-            <a href="tel:+919522234236">
+            <a href="tel:+919522234236" target="_blank">
               <FontAwesomeIcon icon={faPhone} />
               <span>+91 95222-34236</span>
             </a>
